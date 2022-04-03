@@ -3,4 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>hac.servlets.IndexServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>POLLFILE</param-name>
+        <param-value>poll.txt</param-value>
+    </context-param>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/500.html</location>
+    </error-page>
+    <error-page>
+        <exception-type>
+            javax.servlet.ServletException
+        </exception-type >
+        <location>/500.html</location>
+    </error-page>
 </web-app>

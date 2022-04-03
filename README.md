@@ -2,18 +2,26 @@
 # servlets-template
 A template for a Servlets based project. Feel free to modify anything as long as your project can be compiled and ran directly from the IDE configuration.
 <h1>Author(s)</h1>
-<ol>
-<li>Name, email</li>
-</ol>
+<p>Gal Malka, <a href="mailto:galma@std.hac.ac.il" target="_blank">galma@std.hac.ac.il</a> </p>
 
 <h1>Documentation</h1>
-<p>Project API (javadoc) is located in the ... folder</a>.</p>
+<p>A web application to implement a poll. the users can vote one time. after the vote the user see the <br>
+poll results by the time they voted. if he tries to vote more than once then an error is shown and <br>
+the user redirected to the results table.
+</p>
 <h1>Tests and input files</h1>
 <p>
-Provided input files:
-  ...
+Provided input files inside tests folder:
+  <br>
+    test1 - test for empty line ignore
+  <br>
+    test2 - test for wrong number of answers
+  <br>
+    test3 - test for missing question
 </p>
 <h1>Assumptions</h1>
 <p>
-List here any non obvious (authorized) assumptions.
+The poll file must start with question in the first line with question mark at the end and at least two answers.
+if the <br>
+app failed at any point then an error page is shown. for any unsigned routes there is a 404 error page.
 </p>

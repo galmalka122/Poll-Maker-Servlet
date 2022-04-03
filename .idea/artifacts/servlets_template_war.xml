@@ -9,6 +9,12 @@
     </properties>
     <root id="archive" name="servlets-template-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="servlets-template:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="glassfish.javax.json" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.9.0" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
